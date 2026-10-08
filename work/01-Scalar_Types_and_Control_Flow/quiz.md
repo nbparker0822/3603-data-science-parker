@@ -10,21 +10,26 @@ Try every question on your own first — the Answer Key is at the bottom, no pee
 
 **1.** (Multiple Choice) What does `type(True)` return?
 A) `bool`  B) `int`  C) `str`  D) `NoneType`
+Answer: A
 
 **2.** (Code Tracing) What prints?
 ```python
 x = 10
 print(type(x))
 ```
+Answer: <class 'int'>
 
 **3.** (Short Answer) What scalar type would best represent: a person's name, their age, and whether they passed a test?
+Answers: Name should be a string, age should be an int, and whether they passed a test should be a bool
 
 **4.** (Code Tracing) What prints?
 ```python
 print(int('21') + 1)
 ```
+Answer: 22
 
 **5.** (True/False) `input()` always returns a string, even if the user types a number.
+Answer: true
 
 ---
 
@@ -34,16 +39,20 @@ print(int('21') + 1)
 ```python
 print(17 // 5)
 ```
+Answer: 3
 
 **7.** (Code Tracing) What prints?
 ```python
 print(17 % 5)
 ```
+Answer: 2
 
 **8.** (Multiple Choice) Which operator raises a number to a power?
 A) `^`  B) `**`  C) `//`  D) `%%`
+Answer: B
 
 **9.** (Short Answer) `'5' + '5'` does **not** produce `10`. What does it produce, and why?
+Answer: It produces 55 because both fives are strings, so the addition operator just combines the strings.
 
 ---
 
@@ -54,27 +63,34 @@ A) `^`  B) `**`  C) `//`  D) `%%`
 x = 7
 print(x >= 7 and x < 10)
 ```
+Answer: true
 
 **11.** (Short Answer) What does the `not` operator do to a boolean expression?
+Answer: The not operator negates a boolean expression
 
 **12.** (Fill in the Blank) What operator belongs in the blank to check for equality?
 ```python
 if score ___ 100:
     print("Perfect score!")
 ```
+Answer: ==
 
 **13.** (Multiple Choice) Which keyword adds an additional condition after an initial `if`?
 A) `else`  B) `elseif`  C) `elif`  D) `when`
+Answer: C
 
 **14.** (Code Tracing) What prints?
 ```python
 score = 85
 print(0 <= score <= 100)
 ```
+Answer: true
 
 **15.** (True/False) Python uses indentation (whitespace) to define code blocks — it's not just a style choice.
+Answer: true
 
 **16.** (Short Answer) `and` requires every condition to be True to return True. What does `or` require?
+Answer: at least one of the conditions to return true
 
 ---
 
