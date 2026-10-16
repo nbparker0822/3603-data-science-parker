@@ -104,14 +104,22 @@ else:
     status = 'minor'
 ```
 
+Answer: status = 'adult' if age >= 18 else 'minor'
+
 **18.** (Short Answer) Why is comparing two floats with `==` risky? Give an example.
 
+answer: floating point errors can occur for example, the sum of two floats equaling 0.3 may not actually equal 0.3
+
 **19.** (Short Answer) What two keywords did Python 3.10 add for structural pattern matching?
+
+answer: Python added match and case.
 
 **20.** (Code Tracing) What prints?
 ```python
 print('A' <= 'B' <= 'C')
 ```
+
+answer: true
 
 **21.** (Code Tracing) What prints (both words, on one line)?
 ```python
@@ -126,5 +134,8 @@ else:
 print(tier, perk)
 ```
 
+Standard No perks yet
+
 **22.** (Short Answer, C++ Comparison) In C++, `0 <= score <= 100` compiles without any error, but doesn't check what you'd think. If `score = 150`, what does this condition actually evaluate to, and why?
 
+It still evaluates to true even though it shouldn't in my opinion, this is because the computer only evlatuates the first half of the statement, 0 <= score.
