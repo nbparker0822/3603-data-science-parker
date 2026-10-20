@@ -11,6 +11,8 @@ Try every question on your own first — the Answer Key is at the bottom, no pee
 **1.** (Multiple Choice) Which of these creates an empty list?
 A) `[]`  B) `{}`  C) `()`  D) `set()`
 
+answer: A
+
 **2.** (Code Tracing) What prints?
 ```python
 nums = [1, 2, 3]
@@ -18,17 +20,23 @@ nums.append(4)
 print(nums)
 ```
 
+answer: 1, 2, 3, 4
+
 **3.** (Short Answer) What's the difference between `.remove()` and `.pop()` on a list?
+answer: remove deletes an item by its value while .pop removes an item in a specified position
 
 **4.** (Code Tracing) What prints?
 ```python
 letters = ['a', 'b', 'c', 'd', 'e']
 print(letters[1:4])
 ```
+answer: ['b', 'c', 'd']
 
 **5.** (True/False) Lists preserve the order items were added in.
+true
 
 **6.** (Short Answer) You want a new list containing only the items from an existing list that meet some condition (like "score >= 60"). Describe the pattern you'd use to build it.
+answer: I do this by looping through the list and appending any elements that meet the condition to a new empty list.
 
 ---
 
@@ -36,8 +44,10 @@ print(letters[1:4])
 
 **7.** (Multiple Choice) Which of these creates a tuple containing exactly one item?
 A) `(5)`  B) `(5,)`  C) `[5]`  D) `tuple(5)`
+answer: A
 
 **8.** (True/False) You can change the value of an element inside a tuple after it's created.
+False
 
 **9.** (Code Tracing) What prints?
 ```python
@@ -46,7 +56,10 @@ x, y = point
 print(y, x)
 ```
 
+answer: 7, 3
+
 **10.** (Short Answer) Why can tuples be used as dictionary keys, but lists cannot?
+Answer: Tuples are immutable while lists are mutable. 
 
 **11.** (Code Tracing) What does `rest` equal?
 ```python
@@ -54,8 +67,10 @@ scores = (100, 90, 80, 70)
 first, *rest = scores
 print(rest)
 ```
+[90, 80, 70]
 
 **12.** (Short Answer) When a function is defined with `def total(*args):`, what type of object is `args` inside the function?
+answer: tuple 
 
 ---
 
@@ -63,6 +78,7 @@ print(rest)
 
 **13.** (Multiple Choice) Which method safely retrieves a value without raising an error if the key is missing?
 A) `dict[key]`  B) `.get(key)`  C) `.pop(key)`  D) `.items()`
+answer: B
 
 **14.** (Code Tracing) What prints (order doesn't matter)?
 ```python
@@ -70,16 +86,22 @@ d = {'a': 1, 'b': 2}
 for k, v in d.items():
     print(k, v)
 ```
+a 1
+b 2
 
 **15.** (Short Answer) You have `names = ['Ana', 'Ben']` and `scores = [90, 85]`. Describe two different ways to combine them into a single dictionary.
+answer: This can be done using dict an zip, or it can be done with a loop.
+
 
 **16.** (True/False) A dictionary can have two identical keys with different values.
+False
 
 **17.** (Code Tracing) What prints?
 ```python
 student = {'name': 'Ana', 'grades': {'math': 90, 'art': 85}}
 print(student['grades']['math'])
 ```
+90
 
 ---
 
@@ -91,10 +113,13 @@ squares = []
 for n in range(5):
     squares.append(n ** 2)
 ```
+squares = [n ** 2 for n in range(5)]
 
 **19.** (Short Answer) What does `zip(names, scores)` produce when you loop over it?
+Answer: It makes an interator of tuples where each name is paired with the score at the matching index.
 
 **20.** (Short Answer) What's one advantage of `collections.namedtuple` over a plain tuple?
+Answer: It allows the data to be accessed by name instead of index.
 
 ---
 
@@ -107,15 +132,19 @@ b = [3, 4]
 a.append(b)
 print(a)
 ```
+[1, 2, [3, 4]]
+
 
 **22.** (Multiple Choice) Given `a = [1, 2]` and `b = [3, 4]`, which produces `[1, 2, 3, 4]` **and** modifies `a` in place?
 A) `a + b`  B) `a.append(b)`  C) `a.extend(b)`  D) `a.append(*b)`
+Answer: C
 
 **23.** (Code Tracing) What prints?
 ```python
 grid = [[1, 2, 3], [4, 5, 6]]
 print(grid[1][0])
 ```
+4
 
 **24.** (Code Tracing) What prints?
 ```python
@@ -124,8 +153,11 @@ items.pop(1)
 del items[0]
 print(items)
 ```
+['c', 'd']
+
 
 **25.** (Short Answer) Name one situation where `for i in range(len(mylist)):` is the right choice over `for item in mylist:`.
+To compare specific indicies.
 
 ---
 
@@ -139,8 +171,10 @@ people = [
 ]
 print(people[1]['major'])
 ```
+Math
 
 **27.** (Short Answer) You have a list of student records and want to change the major of the student in row 2. Assuming `roster` is the list, write the one line that does it.
+answer: roster[1]['major'] = 'New Major'
 
 **28.** (Code Tracing) What prints?
 ```python
@@ -149,10 +183,15 @@ by_row = {i: row for i, row in enumerate(roster)}
 by_row[0]['major'] = 'Data Science'
 print(roster[0]['major'])
 ```
+Data Science
 
 **29.** (Multiple Choice) In JSON, the value `null` becomes which Python value after `json.loads()`?
 A) `0`  B) `''`  C) `None`  D) `False`
 
+C
+
 **30.** (Short Answer) In a GeoJSON `Point`, the coordinates are written as `[-98.5, 33.9]`. Which number is the latitude?
+
+The second number is latitude. 
 
 
