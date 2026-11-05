@@ -1,0 +1,8 @@
+Hello, Jupyter!
+This is a text file. 🐍
+Another line
+Another line
+Another line
+Another line
+Another line
+Another line
